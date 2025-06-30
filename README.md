@@ -58,34 +58,39 @@ The model is trained on a dataset of fresh and rotten fruits and vegetables imag
 - Model used: Transfer with MobileNetV2
 ## Supported Produce Classes
 The model supports 28 classes of fruits and vegetables:
-Apple (healthy/rotten)
-Banana (healthy/rotten)
-Bell Pepper (healthy/rotten)
-Carrot (healthy/rotten)
-Cucumber (healthy/rotten)
-Grapes (healthy/rotten)
-Lemon (healthy/rotten)
-Mango (healthy/rotten)
-Orange (healthy/rotten)
-Potato (healthy/rotten)
-Strawberry (healthy/rotten)
-Tomato (healthy/rotten)
-Watermelon (healthy/rotten)
-Onion (healthy/rotten)
- ## Deployment
- ## Local Deployment
-streamlit run app1.py
+- Apple (healthy/rotten)
+- Banana (healthy/rotten)
+- Bell Pepper (healthy/rotten)
+- Carrot (healthy/rotten)
+- Cucumber (healthy/rotten)
+- Grapes (healthy/rotten)
+- Lemon (healthy/rotten)
+- Mango (healthy/rotten)
+- Orange (healthy/rotten)
+- Potato (healthy/rotten)
+- Strawberry (healthy/rotten)
+- Tomato (healthy/rotten)
+- Watermelon (healthy/rotten)
+- Onion (healthy/rotten)
  ## Docker Deployment
-dockerfile
-FROM python:3.8-sli
+
+```
+FROM python:3.8-slim
+COPY . /app
+WORKDIR /app
 RUN pip install -r requirements.txt
+EXPOSE 8501
 CMD ["streamlit", "run", "app1.py", "--server.port=8501", "--server.address=0.0.0.0"]
-Contributing
-## Fork the repository
-Create a feature branch
-Make your changes
-Add tests if applicable
-Submit a pull request
+```
+
+## Contributing
+
+1. Fork the repository  
+2. Create a feature branch  
+3. Make your changes  
+4. Add tests if applicable  
+5. Submit a pull request  
+
 
 ## License
 This project is licensed under the MIT License — see the LICENSE file for details.
