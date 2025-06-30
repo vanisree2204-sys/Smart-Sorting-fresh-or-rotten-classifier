@@ -17,15 +17,13 @@ Smart Sorting is an innovative project focused on enhancing the precision and ef
 
 ---
 
-## Project Structure  
-smart-sorting/
-├── app1.py # Main Streamlit app
-├── fruitveg_model.h5 # Trained MobileNetV2 model
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-├── Dockerfile #  For Docker deployment
+## Folder Structure
+- `app.py` : Streamlit application code
+- `model/` : Saved model files
+- `static/` : Static assets (images, css, etc.)
+- `Dataset/` : Training dataset
+- `Documents/` : Project documentation
 
----
 
 ## Installation
 
@@ -91,22 +89,16 @@ Submit a pull request
 
 ## License
 This project is licensed under the MIT License — see the LICENSE file for details.
-
- ## Acknowledgments
-MobileNetV2 architecture by Google
-Dataset from Kaggle community
-TensorFlow and Keras frameworks
-Streamlit for web interface
+## Acknowledgments
+- MobileNetV2 architecture by Google  
+- Dataset from Kaggle community  
+- TensorFlow and Keras frameworks  
+- Streamlit for web interface  
 
 ## Future Enhancements
-Support for additional produce types
-Mobile application development
-IoT device integration
-Real-time video stream processing
-Advanced analytics dashboard
-Multi-language support
-
-pgsql
-Copy
-Edit
-
+- Support for additional produce types  
+- Mobile application development  
+- IoT device integration  
+- Real-time video stream processing  
+- Advanced analytics dashboard  
+- Multi-language support 
