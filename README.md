@@ -1,11 +1,10 @@
 # Smart-Sorting-fresh-or-rotten-classifier
-# Smart Sorting: AI-Powered Produce Quality Detection
 
 ## Overview  
 Smart Sorting is an innovative project focused on enhancing the precision and efficiency of detecting rotten fruits and vegetables using cutting-edge transfer learning techniques. By leveraging the pre-trained **MobileNetV2** deep learning model and adapting it to a specific dataset of fruits and vegetables, this project aims to revolutionize the process of sorting and quality control in the agricultural and food industry.
 
 ## Live Demo  
-[https://neon-horse-517553.netlify.app](https://neon-horse-517553.netlify.app)
+[https://smart-sorting-ai-fresh-or-rotten-classifier-emnpqrbpo2fcshovkb.streamlit.app/]([https://neon-horse-517553.netlify.app](https://smart-sorting-ai-fresh-or-rotten-classifier-emnpqrbpo2fcshovkb.streamlit.app/))
 
 ---
 
@@ -35,16 +34,79 @@ smart-sorting/
 - 8GB+ RAM for model training  
 - GPU support (optional, for faster training)  
 
-### Setup Instructions  
-1. Clone the repository  
-```bash
-git clone <repository-url>
-cd smart-sorting
-# Installation
+## Installation
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```
+   cd Smart-Sorting-Transfer-Learning
+   ```
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+## Usage
+Run the Streamlit app using:
+```
+streamlit run app.py
+```
+Open the given local URL in your browser, upload an image, and view the classification results.
 
-## Create and activate virtual environment
+## Dataset
+The model is trained on a dataset of fresh and rotten fruits and vegetables images collected from various sources.
 
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+## Model
+- Model used: Transfer with MobileNetV2
+## Supported Produce Classes
+The model supports 28 classes of fruits and vegetables:
+Apple (healthy/rotten)
+Banana (healthy/rotten)
+Bell Pepper (healthy/rotten)
+Carrot (healthy/rotten)
+Cucumber (healthy/rotten)
+Grapes (healthy/rotten)
+Lemon (healthy/rotten)
+Mango (healthy/rotten)
+Orange (healthy/rotten)
+Potato (healthy/rotten)
+Strawberry (healthy/rotten)
+Tomato (healthy/rotten)
+Watermelon (healthy/rotten)
+Onion (healthy/rotten)
+ ## Deployment
+ ## Local Deployment
+streamlit run app1.py
+ ## Docker Deployment
+dockerfile
+FROM python:3.8-sli
+RUN pip install -r requirements.txt
+CMD ["streamlit", "run", "app1.py", "--server.port=8501", "--server.address=0.0.0.0"]
+Contributing
+## Fork the repository
+Create a feature branch
+Make your changes
+Add tests if applicable
+Submit a pull request
+
+## License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+ ## Acknowledgments
+MobileNetV2 architecture by Google
+Dataset from Kaggle community
+TensorFlow and Keras frameworks
+Streamlit for web interface
+
+## Future Enhancements
+Support for additional produce types
+Mobile application development
+IoT device integration
+Real-time video stream processing
+Advanced analytics dashboard
+Multi-language support
+
+pgsql
+Copy
+Edit
+
